@@ -1,0 +1,24 @@
+---
+title: ""
+---
+
+```{r echo=FALSE, out.width="95%"}
+#knitr::include_graphics("media/banner-01.jpg")
+```
+<!--
+
+library(knitr)
+rmarkdown::render_site("index.Rmd")# build webpage
+
+# rmarkdown::render_site()# build webpage
+# COPY FILES TO DOCS FOR GITHUB.IO
+system(paste("xcopy", 
+    '"C:/Users/mcolvin/Documents/Teaching/WFA8433-Natural-Resource-Decision-Making/Course-Materials/_site"', 
+    '"C:/Users/mcolvin/Documents/Teaching/WFA8433-Natural-Resource-Decision-Making/Docs"',
+    "/E /C /H /R /K /O /Y")) 
+  q(save="no")  
+
+-->
+
+## Announcements
+* Class 19 [here](Class-19.html)

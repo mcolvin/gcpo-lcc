@@ -1,0 +1,23 @@
+name: "wfa8433"
+navbar:
+  title: "Course home"
+  left:
+    - text: "Project information"
+      menu:
+        - text: "Course home"
+          href: "index.html"      
+    - text: "Additional Resources"
+      menu: 
+        - text: "Literature"
+          href: "literature.html"
+output_dir: "docs"
+exclude: ["/docs"]
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    
+    
+    
+
+    
