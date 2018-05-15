@@ -1,3 +1,10 @@
+
+*.RDS
+*.rds
+*.shp
+*.dbf
+_dat/
+rsconnect/
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
