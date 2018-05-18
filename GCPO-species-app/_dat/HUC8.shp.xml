@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<eainfo>
+		<detailed Name="WBD_HUC8_GCPO10k_Clip">
+			<attr>
+				<attrlabl>AreaAcres</attrlabl>
+				<attalias>AreaAcres</attalias>
+				<attrdef>AreaAcres</attrdef>
+				<attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">OBJECTID_1</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr>
+				<attrlabl>AreaSqKm</attrlabl>
+				<attalias>AreaSqKm</attalias>
+				<attrdef>AreaSqKm</attrdef>
+				<attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>GNIS_ID</attrlabl>
+				<attalias>GNIS_ID</attalias>
+				<attrdef>GNIS_ID</attrdef>
+				<attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>HUC8</attrlabl>
+				<attalias>HUC8</attalias>
+				<attrdef>Unique identifier for HUC</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>LoadDate</attrlabl>
+				<attalias>LoadDate</attalias>
+				<attrdef>LoadDate</attrdef>
+				<attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>MetaSource</attrlabl>
+				<attalias>MetaSource</attalias>
+				<attrdef>MetaSource</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">40</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Name</attrlabl>
+				<attalias>Name</attalias>
+				<attrdef>HUC Name</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">120</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attalias>OBJECTID</attalias>
+				<attrdef>Internal feature number.</attrdef>
+				<attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attalias>Shape</attalias>
+				<attrdef>Feature geometry.</attrdef>
+				<attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr>
+			<attr>
+				<attrlabl>Shape_Area</attrlabl>
+				<attalias>Shape_Area</attalias>
+				<attrdef>Shape_Area</attrdef>
+				<attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr>
+			<attr>
+				<attrlabl>Shape_Leng</attrlabl>
+				<attalias>Shape_Leng</attalias>
+				<attrdef>Shape_Leng</attrdef>
+				<attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SourceData</attrlabl>
+				<attalias>SourceData</attalias>
+				<attrdef>SourceData</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">100</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SourceFeat</attrlabl>
+				<attalias>SourceFeat</attalias>
+				<attrdef>SourceFeat</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">40</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SourceOrig</attrlabl>
+				<attalias>SourceOrig</attalias>
+				<attrdef>SourceOrig</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">130</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>States</attrlabl>
+				<attalias>States</attalias>
+				<attrdef>State</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>TNMID</attrlabl>
+				<attalias>TNMID</attalias>
+				<attrdef>TNMID</attrdef>
+				<attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">40</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">Shape_Length</attrlabl><attalias Sync="TRUE">Shape_Length</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Length of feature in internal units.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr><enttyp><enttypl Sync="TRUE">WBD_HUC8_GCPO10k_Clip</enttypl><enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp></detailed>
+	</eainfo>
+	<dataqual>
+		<lineage>
+			<procstep>
+				<procdesc>Consolidated Data Basin Info: </procdesc>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<idinfo>
+		<descript>
+			<abstract>Watershed boundaries define the aerial extent of surface water drainage to a point. The intent of defining hydrologic units (HU) for the Watershed Boundary Dataset is to establish a base-line drainage boundary framework, accounting for all land and surface areas. The selection and delineation of hydrologic boundaries are determined solely upon science-based hydrologic principles, not favoring any administrative or special projects nor particular program or agency. At a minimum, they are being delineated and georeferenced to the USGS 1:24,000 scale topographic base map meeting National Map Accuracy Standards (NMAS). A hydrologic unit has a single flow outlet except in coastal or lakefront areas.</abstract>
+		</descript>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntorg>USDA NRCS: &lt;a href="http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/water/watersheds/dataset/"&gt;http://www.nrcs.usda.gov/wps/portal/nrcs/main/national/water/watersheds/dataset/&lt;/a&gt;</cntorg>
+				</cntperp>
+			</cntinfo>
+		</ptcontac>
+		<useconst>This dataset represents a subset of USDA NRCS/USGS/USEPA watersheds from the Watershed Boundary Dataset clipped to the Gulf Coastal Plains and Ozarks LCC geography.  All use constraints can be found at: ftp://ftp.ftw.nrcs.usda.gov/wbd/metadata/wbd_poly_seamless.met
+The distributor shall not be held liable for improper or incorrect use of this data, based on the description of appropriate/inappropriate uses described in this metadata document. It is strongly recommended that this data is directly acquired from the distributor and not indirectly through other sources which may have changed the data in some way. These data should not be used at scales greater than 1:24,000 for the purpose of identifying hydrographic watershed boundary feature locations in the U.S.A. The NRCS should be acknowledged as the data source in products derived from these data. The Watershed Boundary Dataset is public information and may be interpreted by all organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application of the data. Federal, State, or local regulatory bodies are not to reassign to the Natural Resources Conservation Service any authority for the decisions they make.  The Natural Resources Conservation Service will not perform any evaluations of these maps or purposes related solely to State or local regulatory programs. Photographic or digital enlargement of these maps to scales greater than that at which they were originally delineated can result in misrepresentation of the data.  If enlarged, the maps will not include the fine detail that would be appropriate for mapping at the small scale.  Digital data files are periodically updated. Files are dated, and users are responsible for obtaining the latest version of the data from the source distributor.</useconst>
+		<keywords>
+			<theme>
+				<themekey>HUC12,HUC10,GCPO LCC,Watershed,HUC8,Hydrologic Unit,WBD,Watershed Boundary Dataset,HUC2,HUC4,Basin,HUC6</themekey>
+			</theme>
+		</keywords>
+		<citation>
+			<citeinfo>
+				<onlink>http://databasin.org/datasets/f57141fecb9849bfa7ccd6ad6634c118</onlink>
+				<othercit>Coordinated effort between the United States Department of Agriculture-Natural Resources Conservation Service (USDA-NRCS), the United States Geological Survey (USGS), and the Environmental Protection Agency (EPA). The Watershed Boundary Dataset (WBD) was created from a variety of sources from each state and aggregated into a standard national layer for use in strategic planning and accountability. Watershed Boundary Dataset for {county, state, or HUC#}, State [Online WWW]. Available URL: "http://datagateway.nrcs.usda.gov" [Accessed DD/MM/YYYY].USA download available at:ftp://ftp.ftw.nrcs.usda.gov/wbd/WBD_Latest_Version_March2015/</othercit>
+				<title>HUC 8 (intersecting GCPO)</title>
+				<origin>United States Department of Agriculture-Natural Resources Conservation Service (USDA-NRCS)</origin>
+				<origin>United States Geological Survey (USGS)</origin>
+				<origin>Environmental Protection Agency (EPA).</origin>
+			</citeinfo>
+		</citation>
+		<spdom>
+			<bounding>
+				<southbc>2815951.6892</southbc>
+				<northbc>6401216.2814</northbc>
+				<eastbc>-8392270.1056</eastbc>
+				<westbc>-12683535.8714</westbc>
+			</bounding>
+		</spdom>
+	</idinfo>
+	<distinfo>
+		<techpreq>ESRI ArcGIS Desktop and supporting operating systems.</techpreq>
+		<stdorder>
+			<digform>
+				<digtopt>
+					<onlinopt>
+						<accinstr>Download from http://databasin.org</accinstr>
+					</onlinopt>
+					<onlineopt>
+						<computer>
+							<networka>
+								<networkr>http://databasin.org/datasets/f57141fecb9849bfa7ccd6ad6634c118</networkr>
+							</networka>
+						</computer>
+					</onlineopt>
+				</digtopt>
+				<digtinfo>
+					<filedec>No compression applied</filedec>
+					<formvern>ArcGIS 10</formvern>
+					<formspec>Feature Layer</formspec>
+					<formname>Feature Layer</formname>
+				</digtinfo>
+			</digform>
+			<ordering>Download from http://databasin.org</ordering>
+			<fees>None</fees>
+		</stdorder>
+		<distliab>No warranty is made by Data Basin for use of this dataset.  No warranty is made by Data Basin regarding the accuracy, reliability, or completeness of this dataset. In no event shall Data Basin have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic or attribute data contained within this dataset or arising out of the delivery, installation, operation, or support by Data Basin.</distliab>
+		<distrib>
+			<cntinfo>
+				<cntvoice>541-757-0687</cntvoice>
+				<cntemail>databasin_admin@consbio.org</cntemail>
+				<cntperp>
+					<cntorg>Data Basin</cntorg>
+					<cntper>Data Basin Administrator</cntper>
+				</cntperp>
+				<cntaddr>
+					<postal>97333</postal>
+					<city>Corvallis</city>
+					<address>136 SW Washington Ave, Suite 202</address>
+					<addrtype>physical address</addrtype>
+					<country>USA</country>
+					<state>OR</state>
+				</cntaddr>
+			</cntinfo>
+		</distrib>
+	</distinfo>
+	<Esri>
+		<CreaDate>20180504</CreaDate>
+		<CreaTime>15180400</CreaTime>
+		<SyncOnce>FALSE</SyncOnce>
+		<DataProperties>
+			<itemProps>
+				<itemLocation>
+					<linkage Sync="TRUE">file://\\WFA-JN1CZF2\C$\Users\dschumann\Documents\ArcGIS\Default.gdb</linkage>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+				</itemLocation>
+				<itemName Sync="TRUE">WBD_HUC8_GCPO10k_Clip</itemName><imsContentType Sync="TRUE">002</imsContentType></itemProps>
+			<copyHistory>
+				<copy source="C:\windows\temp\tmpxtseuc\commondata\gcpo_plus10k_watershedboundarydataset\WBD_HUC8_GCPO10k" dest="C:\windows\temp\tmpxtseuc\f57141fecb9849bfa7ccd6ad6634c118\commondata\gcpo_plus10k_watershedboundarydataset\WBD_HUC8_GCPO10k" date="20150908" time="15171400"/>
+			</copyHistory>
+			<coordRef><type Sync="TRUE">Geographic</type><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><csUnits Sync="TRUE">Angular Unit: Degree (0.017453)</csUnits><peXml Sync="TRUE">&lt;GeographicCoordinateSystem xsi:type='typens:GeographicCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.5'&gt;&lt;WKT&gt;GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433],AUTHORITY[&amp;quot;EPSG&amp;quot;,4269]]&lt;/WKT&gt;&lt;XOrigin&gt;-400&lt;/XOrigin&gt;&lt;YOrigin&gt;-400&lt;/YOrigin&gt;&lt;XYScale&gt;1111948722.2222221&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;8.9831528411952133e-009&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;LeftLongitude&gt;-180&lt;/LeftLongitude&gt;&lt;WKID&gt;4269&lt;/WKID&gt;&lt;LatestWKID&gt;4269&lt;/LatestWKID&gt;&lt;/GeographicCoordinateSystem&gt;</peXml></coordRef><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Analysis Tools.tbx\Clip" Date="20170928" Time="162344">Clip "GCPO\HUC 8 (intersecting GCPO)" "GCPO\GCPO LCC Boundary" C:\Users\dschumann\Documents\ArcGIS\Default.gdb\WBD_HUC8_GCPO10k_Clip #</Process></lineage></DataProperties>
+		<SyncDate>20170928</SyncDate><SyncTime>16232900</SyncTime><ModDate>20170928</ModDate><ModTime>16232900</ModTime><ArcGISFormat>1.0</ArcGISFormat></Esri>
+	<dataIdInfo><envirDesc Sync="TRUE"> Version 6.2 (Build 9200) ; Esri ArcGIS 10.5.0.6491</envirDesc><dataLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">WBD_HUC8_GCPO10k_Clip</resTitle><presForm><PresFormCd value="005" Sync="TRUE"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd value="001" Sync="TRUE"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode value="eng" Sync="TRUE"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><distInfo><distFormat><formatName Sync="TRUE">File Geodatabase Feature Class</formatName></distFormat></distInfo><mdHrLv><ScopeCd value="005" Sync="TRUE"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code="4269" Sync="TRUE"></identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">6.12(3.0.1)</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="WBD_HUC8_GCPO10k_Clip"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><spdoinfo><ptvctinf><esriterm Name="WBD_HUC8_GCPO10k_Clip"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="4" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo><mdDateSt Sync="TRUE">20170928</mdDateSt></metadata>

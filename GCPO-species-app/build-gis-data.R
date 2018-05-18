@@ -1,19 +1,20 @@
 library(rgdal)
+library(googledrive)
 
 states<-readOGR("SpeciesLists","GCPO_States")
 states<-spTransform(states, 
     CRS("+proj=longlat +datum=NAD83 +no_defs +ellps=GRS80
     +towgs84=0,0,0"))
-saveRDS(states,"states-shape.RDS")
+saveRDS(states,"_dat/states-shape.RDS")
 
 gcpo<-readOGR("SpeciesLists","GCPO_Outline")
-saveRDS(gcpo,"gcpo-shape.RDS")
+saveRDS(gcpo,"_dat/gcpo-shape.RDS")
 
 HUC8<-readOGR("SpeciesLists","HUC8")
-saveRDS(HUC8,"HUC8-shape.RDS")
+saveRDS(HUC8,"_dat/HUC8-shape.RDS")
 
 HUC8_intersecting<-readOGR("SpeciesLists","HUC8_intersectingGCPO")
-saveRDS(HUC8_intersecting,"HUC8-intersecting-shape.RDS")
+saveRDS(HUC8_intersecting,"_dat/HUC8-intersecting-shape.RDS")
 
 
 
@@ -28,10 +29,10 @@ plot(HUC8[HUC8$HUC8==12040103,],
 
 
 library(xlsx)
-sppData<- read.xlsx("SpeciesLists/SpeciesTable.xlsx",sheetName="Master_SpeciesList_GCPO")    
-sppMeta<- read.xlsx("SpeciesLists/SpeciesTable.xlsx",sheetName="Species_lookup")    
-saveRDS(sppData,"sppData.RDS")    
-saveRDS(sppMeta,"sppMeta.RDS")    
+sppData<- read.xlsx("C:/Users/mcolvin/Google Drive/GCPO - species lists/(5-14)Master_SpeciesLists.xlsx",sheetName="Master_SpeciesList_GCPO")    
+sppMeta<- read.xlsx("C:/Users/mcolvin/Google Drive/GCPO - species lists/(5-14)Master_SpeciesLists.xlsx",sheetName="Species_lookup")    
+saveRDS(sppData,"_dat/sppData.RDS")    
+saveRDS(sppMeta,"_dat/sppMeta.RDS")    
     
     
     

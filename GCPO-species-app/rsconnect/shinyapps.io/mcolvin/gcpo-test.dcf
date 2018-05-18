@@ -1,0 +1,13 @@
+name: gcpo-test
+title: gcpo-test
+username:
+account: mcolvin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 337638
+bundleId: 1377232
+url: https://mcolvin.shinyapps.io/gcpo-test/
+when: 1526490830.84397
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: build-gis-data.R
