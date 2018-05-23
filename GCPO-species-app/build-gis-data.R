@@ -29,8 +29,8 @@ plot(HUC8[HUC8$HUC8==12040103,],
 
 
 library(xlsx)
-sppData<- read.xlsx("C:/Users/mcolvin/Google Drive/GCPO - species lists/(5-14)Master_SpeciesLists.xlsx",sheetName="Master_SpeciesList_GCPO")    
-sppMeta<- read.xlsx("C:/Users/mcolvin/Google Drive/GCPO - species lists/(5-14)Master_SpeciesLists.xlsx",sheetName="Species_lookup")    
+sppData<- read.xlsx("C:/Users/mcolvin/Google Drive/GCPO - species lists/(5-21)SpeciesTable.xlsx",sheetName="Master_SpeciesList_GCPO")    
+sppMeta<- read.xlsx("C:/Users/mcolvin/Google Drive/GCPO - species lists/(5-21)SpeciesTable.xlsx",sheetName="Species_lookup")    
 saveRDS(sppData,"_dat/sppData.RDS")    
 saveRDS(sppMeta,"_dat/sppMeta.RDS")    
     
