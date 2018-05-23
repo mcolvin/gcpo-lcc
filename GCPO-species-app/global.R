@@ -1,6 +1,7 @@
 
 trans_red<- rgb(228,16,16,alpha=40,maxColorValue=255)
-library("rgdal")
+library(rgdal)
+library(leaflet)
 states<-readRDS("_dat/states-shape.RDS")
 gcpo<-readRDS("_dat/gcpo-shape.RDS")
 huc8<- readRDS("_dat/HUC8-shape.RDS")
