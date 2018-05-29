@@ -63,7 +63,11 @@ map
   
 library(htmlwidgets)
 saveWidget(map, file="m.html")  
-  addPolygons(data=huc8,color="green",weight=1,smoothFactor=1.5,
+ 
+
+
+
+ addPolygons(data=huc8,color="green",weight=1,smoothFactor=1.5,
     opacity = 1, fillOpacity = 0.5,
     fillColor="lightgreen",
         highlightOptions = highlightOptions(color = "white", weight = 2,

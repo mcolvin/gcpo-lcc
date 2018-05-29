@@ -20,6 +20,8 @@ output$gcpo <- renderPlot(
         }
     plot(gcpo,add=TRUE,border="black")
     }, height = 700, width = 1200)
+  
+  
   output$richness <- renderPlot(
     {
     par(mar=c(0,0,0,0),oma=c(0,0,0,0))
@@ -37,17 +39,17 @@ output$gcpo <- renderPlot(
     }, height = 700, width = 1200)
     
     output$map <- renderLeaflet({
-    leaflet(states) %>%
-        addPolygons(color = "#444444", weight = 1, smoothFactor = 0.5,
-            opacity = 1.0, fillOpacity = 0.5,
-            fillColor = "lightgrey",noClip =TRUE,
-            highlightOptions = highlightOptions(color = "white", weight = 2,
-            bringToFront = FALSE))%>%
-        addPolygons(data=huc8,color="green",weight=1,smoothFactor=1.25,
-            opacity = 1, fillOpacity = 0.5,
-            fillColor="lightgreen",
-            highlightOptions = highlightOptions(color = "white", weight = 2,
-            bringToFront = TRUE),label=~huc8$Name)
-  })
+        leaflet(states) %>%
+            addPolygons(color = "#444444", weight = 1, smoothFactor = 0.5,
+                opacity = 1.0, fillOpacity = 0.5,
+                fillColor = "lightgrey",noClip =TRUE,
+                highlightOptions = highlightOptions(color = "white", weight = 2,
+                bringToFront = FALSE))%>%
+            addPolygons(data=huc8,color="green",weight=1,smoothFactor=1.25,
+                opacity = 1, fillOpacity = 0.5,
+                fillColor="lightgreen",
+                highlightOptions = highlightOptions(color = "white", weight = 2,
+                bringToFront = TRUE),label=~huc8$Name)
+    })
 
 }
