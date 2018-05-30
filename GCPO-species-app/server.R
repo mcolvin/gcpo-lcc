@@ -39,17 +39,31 @@ output$gcpo <- renderPlot(
     }, height = 700, width = 1200)
     
     output$map <- renderLeaflet({
-        leaflet(states) %>%
-            addPolygons(color = "#444444", weight = 1, smoothFactor = 0.5,
-                opacity = 1.0, fillOpacity = 0.5,
-                fillColor = "lightgrey",noClip =TRUE,
-                highlightOptions = highlightOptions(color = "white", weight = 2,
-                bringToFront = FALSE))%>%
-            addPolygons(data=huc8,color="green",weight=1,smoothFactor=1.25,
-                opacity = 1, fillOpacity = 0.5,
-                fillColor="lightgreen",
-                highlightOptions = highlightOptions(color = "white", weight = 2,
-                bringToFront = TRUE),label=~huc8$Name)
-    })
+    
+        richness<- aggregate(CommonName~HUC8_ID,sppData,length) 
+        names(richness)[2]<-"richness"
+        tmp<-merge(huc8,richness, by.x="HUC8",by.y="HUC8_ID")
+        tmp@data[is.na(tmp@data$richness),]$richness<-0
+        tmp@data$color<- gray(1-(tmp@data$richness/max(tmp@data$richness)))
+        tmp<-subset(tmp,richness>0)
+        binpal <- colorNumeric(palette="YlGnBu",domain=tmp$richness)
+        map<- leaflet(tmp) %>%
+          addPolygons(data=states,
+            color = "#444444", weight = 1, smoothFactor = 0.5,
+            opacity = 1.0, fillOpacity = 0.5,
+            fillColor = "lightgrey",noClip =TRUE) %>%
+           addPolygons(data=tmp,
+            color=~binpal(richness),
+            weight=1,
+            smoothFactor=1.5,
+            fillOpacity = 1,
+            highlightOptions = highlightOptions(color = "white", weight = 2,
+                bringToFront = TRUE),
+              label=lapply(1:nrow(tmp),function(x)
+                {
+                HTML(paste(tmp$Name[x],"(",tmp$HUC8[x],")","<br>","Species richness: ", tmp$richness[x],sep=""))
+                }))#%>%fitBounds(~min(long), ~min(lat), ~max(long), ~max(lat))
+            
+            })
 
 }

@@ -66,27 +66,51 @@ saveWidget(map, file="m.html")
  
 
 
+## OVERLAPPING POLYGONS
+sppHucs<- subset(sppData,
+            CommonName%in% c("Alabama Shad","Black Bullhead"))
+sppHucs$tmp<-1            
+sppHucs<-reshape2::dcast(sppHucs,HUC8_ID~CommonName,value.var="tmp",sum) 
+sppHucs$spp<- NA
+indx<- c(1:ncol(sppHucs))[-c(1,length(names(sppHucs)))]
+cn<-names(sppHucs)[indx]
+for(i in 1:nrow(sppHucs))
+    {
+    spp<- cn[which(sppHucs[i,indx]==1)]
+    if(length(spp)==1){sppHucs$spp[i]<-spp}else{sppHucs$spp[i]<-paste(spp,collapse="; ")}
+    } 
+sppHucs$noverlap<-rowSums(sppHucs[,indx])
+sppHucs$alpha<-  40*sppHucs$noverlap
+sppHucs$alpha<- ifelse(sppHucs$alpha>255,255,sppHucs$alpha)
+sppHucs$pcolor<- rgb(228,16,16,alpha=sppHucs$alpha,maxColorValue=255) 
+new<- subset(huc8,HUC8 %in% sppHucs$HUC8_ID)
+new<-merge(new,sppHucs, by.x="HUC8",by.y="HUC8_ID")
 
- addPolygons(data=huc8,color="green",weight=1,smoothFactor=1.5,
-    opacity = 1, fillOpacity = 0.5,
-    fillColor="lightgreen",
-        highlightOptions = highlightOptions(color = "white", weight = 2,
-      bringToFront = TRUE),label=~huc8$Name)
-      
-      mapply(function(x, y) {
-               HTML(sprintf("<em>%s:</em> %s", htmlEscape(x), htmlEscape(y)))},
-               cities$City, cities$Pop, SIMPLIFY = F
-      
-      
-      
-map
-
-
-
-huc8@data[huc8@data$Name=="Lower Mississippi-Memphis",]
-huc8@data[huc8@data$Name=="Obion",]
-tmp@data[tmp@data$HUC8=="08010202",]
-sppData[sppData$HUC8_ID=="08010202",]
-sppData[sppData$HUC8_ID=="08010100",]
-
-
+     
+map<- leaflet(states) %>%
+  addPolygons(color = "#444444", weight = 1, smoothFactor = 0.5,
+    opacity = 1.0, fillOpacity = 0.5,
+    fillColor = "lightgrey",noClip =TRUE) %>%
+  addPolygons(data=new,
+    color=~new$pcolor,
+    weight=1,
+    smoothFactor=1.5,
+    fillOpacity = 1,
+      highlightOptions = highlightOptions(color = "white", weight = 2,
+        bringToFront = TRUE),
+      label=lapply(1:nrow(new),function(x)
+        {
+        HTML(paste("<b>",new$Name[x]," (",new$HUC8[x],")","</b><br>",
+            "<b>Number of species overlapped:</b> ",new$noverlap[x],"<br>",
+            "<b>Overlapping species:</b> ", new$spp[x],            
+            sep=""))
+        }))
+        
+map        
+        
+        %>%
+    addLegend("bottomright", 
+        pal = binpal, 
+        values = tmp$richness,
+        title = "Species richness",
+        opacity = 1)
