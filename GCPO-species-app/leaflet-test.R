@@ -68,7 +68,7 @@ saveWidget(map, file="m.html")
 
 ## OVERLAPPING POLYGONS
 sppHucs<- subset(sppData,
-            CommonName%in% c("Alabama Shad","Black Bullhead"))
+            CommonName%in% c("Alabama Shad"))
 sppHucs$tmp<-1            
 sppHucs<-reshape2::dcast(sppHucs,HUC8_ID~CommonName,value.var="tmp",sum) 
 sppHucs$spp<- NA
@@ -79,7 +79,8 @@ for(i in 1:nrow(sppHucs))
     spp<- cn[which(sppHucs[i,indx]==1)]
     if(length(spp)==1){sppHucs$spp[i]<-spp}else{sppHucs$spp[i]<-paste(spp,collapse="; ")}
     } 
-sppHucs$noverlap<-rowSums(sppHucs[,indx])
+if(length(indx)>1){sppHucs$noverlap<-rowSums(sppHucs[,indx])}
+if(length(indx)==1){sppHucs$noverlap<-sppHucs[,indx]}
 sppHucs$alpha<-  40*sppHucs$noverlap
 sppHucs$alpha<- ifelse(sppHucs$alpha>255,255,sppHucs$alpha)
 sppHucs$pcolor<- rgb(228,16,16,alpha=sppHucs$alpha,maxColorValue=255) 

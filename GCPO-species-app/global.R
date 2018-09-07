@@ -2,9 +2,10 @@
 trans_red<- rgb(228,16,16,alpha=40,maxColorValue=255)
 library(rgdal)
 library(leaflet)
-states<-readRDS("_dat/states-shape.RDS")
+states1<-readRDS("_dat/states-shape.RDS")
 gcpo<-readRDS("_dat/gcpo-shape.RDS")
 huc8<- readRDS("_dat/HUC8-shape.RDS")
-HUC8_intersecting<- readRDS("_dat/HUC8-intersecting-shape.RDS")
+#HUC8_intersecting<- readRDS("_dat/HUC8-intersecting-shape.RDS")
 sppData<- readRDS("_dat/sppData.RDS")
 sppMeta<- readRDS("_dat/sppData.RDS")
+
