@@ -1,0 +1,168 @@
+2018113-SSA-FIT meeting
+
+* 2010 was the first meeting
+
+* Objective 
+    * quality in volume
+    * consistency
+    * one last one didn't catch
+* Quality. As capacity increases we can get a higher quality product. Tools
+and techniques can help bend the curve and get higher quality of the SSAs.
+
+* Integrating adaptive potential into ESA decisions
+    * Representation is the adaptive capacity of the species (persist)
+    * 3 mechanisms 1) movement, 2 phynotypic plasticity, 3) genetically based
+    adaptation to environmental changes
+    * Use proxies for AC in SSAs (presences across gradients, diversity of behavior or
+    phynotypic variation across species)
+    * What determines AC. Amount of heritable within and among population in fitness
+    related traits (e.g., temperature tolerance).
+    * Nice flow chart of listing and recover process under ESA (maybe get ahold of?
+    or see Smith et al 2018)
+    * To do SNPs it looks like 100k or more and a couple of years
+    * Steps after initiating SSA
+        1. Collect, review and synthesize existing information
+        2. determine entity for assessment
+        3. Assess current condition of species habitat and demographics and probable
+        explanations for past and ongoing changes in abundance and distribution,
+        determine conservation need
+        4. Assess species likely response to probable future scenarios of environmental
+        conditions and conservation efforts
+        5. Use results of assessment to determine if species meets definition of threatened
+        or endangered weight uncertainty and decision error
+    * Principle of representation and loss and risk, white paper on how to talk about
+    in and how much does representation really matter?
+    * Good point to think about what information is needed and whether it can change
+    status. 
+* Ryan-Incorporating climate science into SSAs
+    * Key messages
+        * climate model represent the best available science
+        * climate models are most useful for risk assessment when species climate
+        sensitivity is well understood
+        * Access, using, interpreting model output can be complicated
+    * 2 types of downscaling, dynamic and statistical-GCM are still too coarse
+    to do fine scale climate
+        * Dynamic-feeds a high resolution small scale model allows the user to 
+        look at mechanisms-still requires massive computing (super computing)
+        * Statistical (empirical model) - build a statistical relationship with 
+        historical data and projections, can be done on a laptop, issues are that
+        it is generally limited to precipitation and temperature and assumes the historical relationsip
+        is valid into the future.
+* Brad 
+* SSAs take ~18 months    
+    
+  
+* Razorback sucker was a good example of representation and redundancy
+    * Species level and describe species level 
+    * Described units
+    * Unclear what the species actually needs (used to be versus current distro)
+    * Concluded representation was similar to what was in the past
+    * Future-3 of 4 extirpate, lose southern adaptability
+    * Thinking about loss of adaptive capacity
+    * Lots of genetic information from stocking 
+Ecoregions and ecotypes
+* Delineate units, data varies 
+* What does the loss of a representation mean in terms of risk, decision 
+makers are not able to follow logic 
+* What do you do with representation when populations are 10 miles apart
+* representation is also capturing the breadth of environment.
+* How do ecological settings influence adaptive capacity.
+* Population and species level are interrelated. 
+* How might effective population size change into the future
+* You need to look at processes driving diversity and you want those processes
+to remain in the future
+* Narrow endemics-there may not be alot of variation or it may be artificial
+* Looking a proxies 
+* Challenges
+    * Narrow endemics
+    * Future Risk
+* Solutions
+    * Processes like genetic drift and gene flow for narrow endemics 
+    * 
+* Adaptive capacity units (units of unique sources of diversity) are
+* Clarify the difference between adaptive capacity units and ecological contexts
+* How many adaptive capacity units are needed in overall risk. 
+* There is a disjunct in species recovery and population recovery
+* What is the consequence of losing a representation unit to species persistance
+ 
+    
+    
+## Redundancy
+
+* you have to have a map-seen SSAs try to push through a report without maps
+* no. of population in redundancy categories
+* Redundancy north to south and tied back to number, e.g., 6 populations given
+current and 4 under pessimistic scenarios. Done straight to the species level.
+* Resilience categories map and how that changes with scenarios builds into redundancy
+* Adaptive capacity unit (ACU). 
+* Think about catastrophe as probabilistic... [AI]
+* Lots of uncertainty as to difference between representation and redundancy
+* Catastrophes are not coming in enough or not discussed enough.
+    * catastropes need to be specified explicitly
+* The story is getting lost need a good way to tell the SSA story
+* Each population has a different catastrophe risk...
+* In NCTC goes from population to species level in terms of 3Rs.
+* SSAs are really focusing on executive summaries and synthesis chapters. 
+* Fear of drawing conclusions --- e.g., I have 8 in high and 2 in low and that leads
+to some unknown level of risk. 
+* Maybe think about some 'risk scenarios' i.e., best case and worst case, thinks
+are relative. Generate varying 'risk profiles'    
+
+## Resiliency and Current Condition tables (low analytic ssa)
+ 
+* Used widely and potential wrongly. 
+* Candy darter is a good example 
+    * what you could measure
+    * used a field trip to calibrate the table
+* Arkansas river shiner & peppered chub
+    * Good support in literature
+    * Lots of good support for categories
+    * Tight tie with river distance and pelagic drift
+* Resilience in general 
+    * Coast skipper used a Bayes net
+* Lots of information does not necessarily lead to better resiliency
+    * Really think about the data you have. Easier if there is a data analyst.
+* SSA 200-how to talk to modelers is a good class
+* Resiliency goes awry when people get creative. Need to have
+population abundance and growth rate in there, basic drivers of
+resilience are initial abundance and growth rate. (assumes habitat
+is going to drive resilience, but if you have no population then no
+resiliency). 
+    * Could use a proxy like occupancy but you need to make explicit
+* Ratio of positive to overall surveys 
+* Threats don't end up in a condition table 
+* Criteria  (Probability of population or ACU persistence) not 
+not at species level (You have some flexibility using this approach).
+* If resiliency is probability of persistence over time. 
+* Decision makers might be anchoring on the resiliency (FWS has
+gotten good at resiliency --> dm keying in on it, easier to 
+wrap their head around resiliency) 
+
+SPR-significant proportion of the range (should go into the first step of SSA?).
+ARD-Assistant Regional Director
+
+Risk of loss of genetic/adaptive capacity (blob that is out of core and maybe in 
+poor shape that hinders recovery. 
+
+Section 7 has a dual need for an SSA, incident take on a
+individual take statement. 
+Open standards of threats, and so on. 
+
+## Cause and effect analysis
+
+* use cause and effect tables, magnitude scale and scope. 
+* need to have a good influence diagram 
+* Razorback sucker use table to filter through threats to look
+at individual 
+* Whitetail prairie dog- do an analysis of stressor and effects population
+level resiliency. Model, cause and effect table, and paragraph.
+* does a cause and effect table be necessary for an SSA?
+* Elevator SSA presentation is needed. 
+* Skiff Milkveg was a good SSA but the executive summary was poor
+* The bucket of threats is important to DMs
+* Cause and effect table needs to link current and future scenarios
+* Common theme of connecting the dots from current, cause and effect, and future.
+
+20181115
+
+* 
